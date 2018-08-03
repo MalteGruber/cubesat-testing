@@ -1,0 +1,84 @@
+
+
+DAC =  Digital to Analogue Converter, 14 bit, 2.7V to 5.5V, WQFN, 16 Pins 
+2837389
+
+
+Microcontroller = ATMEGA328P
+2425124
+9171371
+
+Uart to USB = FT230XQ-R
+2081324
+
+USB connector
+
+
+Capacitors Tantalumn = 
+
+
+Polyfuse = PPTC Resettable Fuse, SMD, MF-MSMF Series, 500 mA, 1 A, 15 V, -40 °C
+9350314
+
+
+
+Crystal for microcontroller = Kristall, 16 MHz, SMD, 5mm x 3,2mm, 10 ppm, 10 pF, 10 ppm, ABM3B Serien
+2467807
+
+
+Capacitors 0603: 22pF
+Resistors 0603: 27 ohm???
+
+
+------OTHER------
+Sun sensor diode
+1218991
+http://www.farnell.com/datasheets/125186.pdf?_ga=2.115982660.39217254.1517922735-922080438.1505231762
+
+
+Isolator uart
+1078200
+
+i2c buffer from Thedi TCA4311A (VSSOP????)
+2496538
+
+
+3v3 LDO
+2729708
+
+Power mosfet
+2480703 = nope
+2061404 = sot-23
+
+
+
+
+
+RESISTORS 
+Filter: 
+
+http://uk.farnell.com/w/c/passive-components/resistors-fixed-value/through-hole-resistors/prl/results?resistance=10ohm|12ohm|15ohm|18ohm|20ohm|22ohm|25ohm|27ohm|30ohm|33ohm|36ohm|39ohm|40ohm|47ohm|50ohm|51ohm|56ohm|6.8ohm|62ohm|68ohm|7.5ohm|75ohm|8.2ohm&product-range=ac-series|ep-series|mcknp-series|sbc-series|sq-series&power-rating=10.5w|10w|11w|12.5w|12w|13w|14w|15w|17w|20w|5.5w|5w|6.5w|6w|7.5w|7w|8w&range=exc-direct-ship|inc-in-stock&sort=P_ATT_BASE_VALUE_1011092_EN_GB|1&pageSize=100
+
+
+
+For 3.3 ohm use 3P 10 ohms 
+1903916 5w
+
+For 5 ohm use 3P 15 ohms
+1903918 5w
+
+For 10 ohms use 2P 20 ohms
+1903920 5w
+
+For 6.6 use a 10 and a 20 ohm
+
+
+
+
+
+
+
+==================
+
+
+
