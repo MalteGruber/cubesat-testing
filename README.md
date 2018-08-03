@@ -22,6 +22,7 @@ This PCB can simulate the satellites sun-sensors and is used for testing the Att
 
 ## QuizCube
 QuizCube is an experimental testing system for coordinating test system interactions using a web socket based broad cast commuinication interface.
-![Image of graph](.media/testingSystem.png | width=60 )
+
+![Image of graph](.media/testingSystem.png|width=60 )
 
 ### Experiment Simulator Client
