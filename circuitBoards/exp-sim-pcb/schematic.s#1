@@ -16288,8 +16288,6 @@ GND Return</text>
 <text x="632.46" y="119.38" size="2.54" layer="96">Still ok for programing, just disconnect everything from the board!</text>
 <text x="673.1" y="38.1" size="2.54" layer="96">Choose resistor dividers so that voltage is ok for the µC.</text>
 <text x="279.4" y="35.56" size="2.54" layer="96">µC=Microcontroller </text>
-<text x="607.06" y="152.4" size="2.54" layer="96">OBS, the real chip is a "long" version, this is the short version.
-The chip still fits but is a pain to solder, do not use this footprint!</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="73.66" y="58.42" rot="R180"/>
