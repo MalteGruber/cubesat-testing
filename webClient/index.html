@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="custom.css">
+
+        <title>CubeTest Monitor</title>
+    </head>
+    <body>
+
+        <div class="container">       
+
+
+            <h1 style="text-align: center;">CubSat Testing Framework</h1>
+            <h2 style="text-align: center;">Monitor Page</h278>
+                <h1>Demo</h1>
+                These are buttons, they will send a JSON object over the websocket to all other clients<br>
+
+                <button data-cubesat-btn='{a:{b:{c:1337,x:92}}}' type="button" class="btn btn-success">Button A</button>
+                <button data-cubesat-btn='{a:{b:{e:42,b:1337}}}' type="button" class="btn btn-success">Button B</button>
+                <button data-cubesat-btn='{a:{b:{e:2018,b:92}}}' type="button" class="btn btn-success">Button C</button>
+                <button data-cubesat-btn='{a:{b:{c:999999,x:92}}}'  type="button" class="btn btn-success">Button D</button>
+                <br><br>
+                This is a parameter display, it will show a parameter that from a object that matches its filter.
+
+                <p class="param" data-cubesat-param="[a.b.c;a.b.x]->a.b.c">...</p>
+                <p class="param" data-cubesat-param="[a.b.e;a.b.b]->a.b.e">...</p>
+
+                This is a number input
+                <div class="form-group">
+                    <label for="pwd">Example Input I:</label>
+                    <input data-cubesat-input="{a:{b:{e:INPUT,b:92}}}" type="number" class="form-control">
+                    <label for="pwd">Example Input II:</label>
+                    <input data-cubesat-input="{a:{b:{c:INPUT,x:92}}}" type="number" class="form-control">
+                </div>
+
+                <h1>Experiment Simulators</h1>
+                <h2>Experiment Simulator Client</h2>
+                <button data-cubesat-btn='{es:{list:true}}' type="button" class="btn btn-success">Request Device List</button>
+                <button data-cubesat-btn='{es:{scan:true}}' type="button" class="btn btn-success">Request Scan</button>
+
+                <h2>Channel 101</h2>            
+                <button data-cubesat-btn='{es:{cmd:"V",id:101}}' type="button" class="btn btn-success">Request Voltage</button>
+                <button data-cubesat-btn='{es:{cmd:"C",id:101}}' type="button" class="btn btn-success">Request Current</button>
+                <hr>
+                <p class="param-small" data-cubesat-param="[es.voltage;es.id===101]->es.voltage" data-cubesat-format='{name:"Voltage",unit:"mV"}'>-</p>
+                <p class="param-small" data-cubesat-param="[es.current;es.id===101]->es.current" data-cubesat-format='{name:"Current",unit:"mV"}'>-</p>
+
+
+
+                <h2>Channel 2</h2>            
+                <button data-cubesat-btn='{es:{cmd:"V",id:2}}' type="button" class="btn btn-success">Request Voltage</button>
+                <button data-cubesat-btn='{es:{cmd:"C",id:2}}' type="button" class="btn btn-success">Request Current</button>
+                <hr>
+                <p class="param-small" data-cubesat-param="[es.voltage;es.id===2]->es.voltage" data-cubesat-format='{name:"Voltage",unit:"mV"}'>-</p>
+                <p class="param-small" data-cubesat-param="[es.current;es.id===2]->es.current" data-cubesat-format='{name:"Current",unit:"mV"}'>-</p>
+
+                <!--       <input data-cubesat-input='{es:{cmd:"LINPUT",id:2}}' type="number" class="form-control"> -->
+                <h2>Channel 3</h2>           
+                <button data-cubesat-btn='{es:{cmd:"V",id:3}}' type="button" class="btn btn-success">Request Voltage</button>
+                <button data-cubesat-btn='{es:{cmd:"C",id:3}}' type="button" class="btn btn-success">Request Current</button>
+                <hr>
+                <p class="param-small" data-cubesat-param="[es.voltage;es.id===3]->es.voltage" data-cubesat-format='{name:"Voltage",unit:"mV"}'>-</p>
+                <p class="param-small" data-cubesat-param="[es.current;es.id===3]->es.current" data-cubesat-format='{name:"Current",unit:"mV"}'>-</p>
+
+                <!--     <input data-cubesat-input='{es:{cmd:"LINPUT",id:3}}' type="number" class="form-control"> -->
+
+
+                <h2>Channel 4</h2>            
+                <button data-cubesat-btn='{es:{cmd:"V",id:4}}' type="button" class="btn btn-success">Request Voltage</button>
+                <button data-cubesat-btn='{es:{cmd:"C",id:4}}' type="button" class="btn btn-success">Request Current</button>
+                <hr>
+                <p class="param-small" data-cubesat-param="[es.voltage;es.id===4]->es.voltage" data-cubesat-format='{name:"Voltage",unit:"mV"}'>-</p>
+                <p class="param-small" data-cubesat-param="[es.current;es.id===4]->es.current" data-cubesat-format='{name:"Current",unit:"mV"}'>-</p>
+        </div>
+
+        <script src="cubesat-framework.js"></script>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
