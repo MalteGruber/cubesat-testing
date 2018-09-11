@@ -1,5 +1,5 @@
 # Web Interface Demo
-This is a demo of how a Web interface using  `cubesat-framework.js`could look like. This framework was used to test send commands to the experiment simulators and to retrieve and show data from them.
+This is a demo of how a Web interface using  `cubesat-framework.js`could look like. This framework was used to send test commands to the experiment simulators and to retrieve and show data from them.
 ## Important!
 Make sure to change the IP address in `cubesat-framework.js` to your WebSocket server.
 
